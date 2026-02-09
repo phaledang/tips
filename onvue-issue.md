@@ -38,7 +38,7 @@ If virtualization-related services are running in the background, it can fail th
 ---
 Note: I’m not 100% sure every step was required, but I’m documenting everything that I did.
 
-## 🛠 Step 1 – Disable Windows Virtualization Features
+## 🛠 Step 1 – Shutdown wsl, Disable Windows Virtualization Features, disable dev drive
 
 I opened **Command Prompt as Administrator** and ran:
 ```
@@ -48,10 +48,17 @@ dism /online /disable-feature /featurename:Microsoft-Hyper-V-All
 fsutil devdrv disable
 
 ```
+<img width="326" height="201" alt="image" src="https://github.com/user-attachments/assets/b1e63cef-00fd-4c50-8203-65ef4b19c110" />
 
 After disabling these features, I **restarted the computer**.
 
 > Restarting after turning off Windows features is important.
+
+### Verify dev drive and ubuntu (not 100% certain this was required)
+✔ No Ubuntu distribution visible
+✔ No mounted WSL filesystem
+✔ No Dev Drive attached (click detack if needed)
+<img width="158" height="83" alt="image" src="https://github.com/user-attachments/assets/45d77de8-610e-43a1-9285-566183976938" />
 
 ---
 
@@ -66,7 +73,6 @@ That means something was triggering it automatically.
 So I:
 
 - Looked for any WSL-related processes  
-- Looked for Docker services  
 - Ended those tasks manually  
 ---
 
@@ -86,6 +92,9 @@ So I:
    - Remote – WSL  
    - Dev Containers  
    - Docker  
+<img width="725" height="233" alt="image" src="https://github.com/user-attachments/assets/63f1de50-7dec-4b24-b807-e4e9056bb7f8" />
+<img width="706" height="323" alt="image" src="https://github.com/user-attachments/assets/7c6e142a-e6be-4128-94f6-3b4c3d0671d7" />
+<img width="751" height="457" alt="image" src="https://github.com/user-attachments/assets/4fe640a3-baed-4824-9564-11062e32276f" />
 
 I **did restart after disabling the Windows features**, but I honestly don’t remember whether I restarted again after disabling the VS Code extensions.
 
