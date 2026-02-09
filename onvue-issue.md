@@ -100,7 +100,7 @@ So I:
 <img width="706" height="323" alt="image" src="https://github.com/user-attachments/assets/7c6e142a-e6be-4128-94f6-3b4c3d0671d7" />
 <img width="751" height="457" alt="image" src="https://github.com/user-attachments/assets/4fe640a3-baed-4824-9564-11062e32276f" />
 
-I **did restart after disabling the Windows features**, but I honestly don’t remember whether I restarted again after disabling the VS Code extensions.
+5. Restarted the computer
 
 ---
 
