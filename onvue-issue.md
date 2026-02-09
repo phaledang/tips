@@ -92,10 +92,12 @@ So I:
    - `docker`
    - `container`
    - `wsl`
-4. Search and disabled extensions:
-   - Remote – WSL  
-   - Dev Containers  
-   - Docker  
+4. Disabled extensions:
+   - Container Tools
+   - Dev Containers
+   - Renote Development
+   - Docker
+   - WSL  
 <img width="725" height="233" alt="image" src="https://github.com/user-attachments/assets/63f1de50-7dec-4b24-b807-e4e9056bb7f8" />
 <img width="706" height="323" alt="image" src="https://github.com/user-attachments/assets/7c6e142a-e6be-4128-94f6-3b4c3d0671d7" />
 <img width="751" height="457" alt="image" src="https://github.com/user-attachments/assets/4fe640a3-baed-4824-9564-11062e32276f" />
