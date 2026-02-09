@@ -68,9 +68,6 @@ So I:
 - Looked for any WSL-related processes  
 - Looked for Docker services  
 - Ended those tasks manually  
-
-OnVUE is extremely strict — even background services matter.
-
 ---
 
 ## 🧩 Step 3 – Investigate Visual Studio Code Extensions
@@ -91,10 +88,6 @@ So I:
    - Docker  
 
 I **did restart after disabling the Windows features**, but I honestly don’t remember whether I restarted again after disabling the VS Code extensions.
-
-If I had to recommend a clean approach, I would restart again just to be safe.
-
-Better to eliminate all doubt before the exam.
 
 ---
 
@@ -151,26 +144,17 @@ Even if you are not “running a virtual machine,” Windows may still:
 
 - Keep virtualization services active  
 - Automatically start WSL  
-- Enable background container services  
+- Enable background container services 
 
 And OnVUE detects that.
 
-It’s not wrong — it’s just extremely strict.
-
 ---
 
-## 🎯 Final Thoughts
-
-If you’re a developer taking certifications (Azure, AWS, PMP, etc.), this issue is more common than you think.
-
-The key takeaway:
-
-Even background virtualization services can cause OnVUE to fail.
-
+## The key takeaway:
+Background services can cause OnVUE to fail.
 So before your exam:
-
-- Close everything  
-- Disable virtualization features  
+- Disable virtualization features
+- Disable VS Code Docker/WSL/Container extensions  
 - Restart  
 - Double-check Task Manager  
 
