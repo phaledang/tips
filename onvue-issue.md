@@ -33,11 +33,10 @@ But I *do* use:
 - Hyper-V (occasionally)
 
 And that’s likely where the problem started.
-
-OnVUE doesn’t care whether you’re actively using a VM.  
 If virtualization-related services are running in the background, it can fail the pre-check.
 
 ---
+Note: I’m not 100% sure every step was required, but I’m documenting everything that I did.
 
 ## 🛠 Step 1 – Disable Windows Virtualization Features
 
