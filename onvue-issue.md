@@ -92,7 +92,7 @@ So I:
    - `docker`
    - `container`
    - `wsl`
-4. Disabled extensions like:
+4. Search and disabled extensions:
    - Remote – WSL  
    - Dev Containers  
    - Docker  
