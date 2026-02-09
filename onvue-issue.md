@@ -38,7 +38,7 @@ If virtualization-related services are running in the background, it can fail th
 ---
 Note: I’m not 100% sure every step was required, but I’m documenting everything that I did.
 
-## 🛠 Step 1 – Shutdown wsl, Disable Windows Virtualization Features, disable dev drive
+## 🛠 Step 1 – Shutdown wsl, disable Windows Virtualization Features, disable dev drive
 
 I opened **Command Prompt as Administrator** and ran:
 ```
