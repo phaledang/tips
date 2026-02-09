@@ -104,38 +104,21 @@ I **did restart after disabling the Windows features**, but I honestly don’t r
 
 ---
 
-## 🌐 Bonus Issue – Edge Appearing as “Still Open”
+## Run the OnVUE system test again.
 
-Another strange behavior:
+If it mentions that a specific process is still running (for example, a browser, background service, or unknown app):
 
-OnVUE sometimes told us to close Microsoft Edge. 
-But Edge was already closed.
+- Open Task Manager
+- Locate the exact process name shown in the OnVUE warning
+- Click End Task
+- Retry the system check
 
-Solution:
+OnVUE may detect:
 
-1. Open Task Manager  
-2. Find all **Microsoft Edge** processes  
-3. Click **End Task**  
-
-Sometimes Edge runs background processes even when no window is open.
-
-After force-ending it, the pre-check moved forward.
-
----
-
-## ✅ The Final Sequence I Recommend
-
-If you want a clean and stress-free setup before your exam, do this:
-
-1. Disable Windows virtualization features  
-2. Restart the computer  
-3. Open Task Manager and end:
-   - WSL processes  
-   - Docker services  
-   - Edge background processes  
-4. Disable VS Code Docker/WSL/Container extensions  
-5. Restart again (recommended)  
-6. Run the OnVUE system test  
+- Background browser processes
+- Hidden services
+- Dev-related tooling
+- Container or virtualization services
 
 ---
 
@@ -163,11 +146,12 @@ And OnVUE detects that.
 ## The key takeaway:
 Background services can cause OnVUE to fail.
 So before your exam:
-- Disable virtualization features
-- Disable VS Code Docker/WSL/Container extensions  
-- Restart  
-- Double-check Task Manager  
-
+1. Disable Windows virtualization features and restart the computer
+2. Disable VS Code Docker/WSL/Container extensions and restart the computer 
+3. Open Task Manager and end:
+   - WSL processes  
+   - Edge background processes 
+4. Run the OnVUE system test. If it mentions that a specific process is still running, use task manager to end it 
 
 
 
