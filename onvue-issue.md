@@ -48,7 +48,7 @@ dism /online /disable-feature /featurename:Microsoft-Hyper-V-All
 fsutil devdrv disable
 
 ```
-Alternative: using "turn Windows features on or of"
+Alternative: using "turn Windows features on or off"
 
 <img width="326" height="201" alt="image" src="https://github.com/user-attachments/assets/b1e63cef-00fd-4c50-8203-65ef4b19c110" />
 
@@ -58,11 +58,9 @@ After disabling these features, I **restarted the computer**.
 > Restarting after turning off Windows features is important.
 
 ### Verify dev drive and ubuntu (not 100% certain this was required)
-✔ No Ubuntu distribution visible
-
-✔ No mounted WSL filesystem
-
-✔ No Dev Drive attached (click detack if needed)
+- No Ubuntu distribution visible
+- No mounted WSL filesystem
+- No Dev Drive attached (click detack if needed)
 
 <img width="158" height="83" alt="image" src="https://github.com/user-attachments/assets/45d77de8-610e-43a1-9285-566183976938" />
 
