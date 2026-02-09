@@ -41,4 +41,139 @@ Note: I’m not 100% sure every step was required, but I’m documenting everyth
 ## 🛠 Step 1 – Disable Windows Virtualization Features
 
 I opened **Command Prompt as Administrator** and ran:
+```
+wsl --shutdown
+DISM /Online /Disable-Feature /FeatureName:VirtualMachinePlatform
+dism /online /disable-feature /featurename:Microsoft-Hyper-V-All
+fsutil devdrv disable
+
+```
+
+After disabling these features, I **restarted the computer**.
+
+> Restarting after turning off Windows features is important.
+
+---
+
+## 🔎 Step 2 – Check Task Manager (Very Important)
+
+After rebooting, I opened **Task Manager**.
+
+Even though WSL wasn’t in Startup apps, I still saw related background processes.
+
+That means something was triggering it automatically.
+
+So I:
+
+- Looked for any WSL-related processes  
+- Looked for Docker services  
+- Ended those tasks manually  
+
+OnVUE is extremely strict — even background services matter.
+
+---
+
+## 🧩 Step 3 – Investigate Visual Studio Code Extensions
+
+My suspicion: a VS Code extension was starting WSL or container services in the background.
+
+So I:
+
+1. Opened **Visual Studio Code**
+2. Went to **Extensions**
+3. Searched for:
+   - `docker`
+   - `container`
+   - `wsl`
+4. Disabled extensions like:
+   - Remote – WSL  
+   - Dev Containers  
+   - Docker  
+
+I **did restart after disabling the Windows features**, but I honestly don’t remember whether I restarted again after disabling the VS Code extensions.
+
+If I had to recommend a clean approach, I would restart again just to be safe.
+
+Better to eliminate all doubt before the exam.
+
+---
+
+## 🌐 Bonus Issue – Edge Appearing as “Still Open”
+
+Another strange behavior:
+
+OnVUE sometimes said:
+
+> “Please close Microsoft Edge.”
+
+But Edge was already closed.
+
+Solution:
+
+1. Open Task Manager  
+2. Find all **Microsoft Edge** processes  
+3. Click **End Task**  
+
+Sometimes Edge runs background processes even when no window is open.
+
+After force-ending it, the pre-check moved forward.
+
+---
+
+## ✅ The Final Sequence I Recommend
+
+If you want a clean and stress-free setup before your exam, do this:
+
+1. Disable Windows virtualization features  
+2. Restart the computer  
+3. Open Task Manager and end:
+   - WSL processes  
+   - Docker services  
+   - Edge background processes  
+4. Disable VS Code Docker/WSL/Container extensions  
+5. Restart again (recommended)  
+6. Run the OnVUE system test  
+
+---
+
+## 🧠 Why This Happens
+
+Tools like:
+
+- WSL2  
+- Docker Desktop  
+- Hyper-V  
+- Dev Containers  
+
+Use virtualization under the hood.
+
+Even if you are not “running a virtual machine,” Windows may still:
+
+- Keep virtualization services active  
+- Automatically start WSL  
+- Enable background container services  
+
+And OnVUE detects that.
+
+It’s not wrong — it’s just extremely strict.
+
+---
+
+## 🎯 Final Thoughts
+
+If you’re a developer taking certifications (Azure, AWS, PMP, etc.), this issue is more common than you think.
+
+The key takeaway:
+
+Even background virtualization services can cause OnVUE to fail.
+
+So before your exam:
+
+- Close everything  
+- Disable virtualization features  
+- Restart  
+- Double-check Task Manager  
+
+
+
 
