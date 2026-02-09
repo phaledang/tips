@@ -60,7 +60,7 @@ After disabling these features, I **restarted the computer**.
 ### Verify dev drive and ubuntu (not 100% certain this was required)
 - No Ubuntu distribution visible
 - No mounted WSL filesystem
-- No Dev Drive attached (click detack if needed)
+- No Dev Drive attached (click detach if needed)
 
 <img width="158" height="83" alt="image" src="https://github.com/user-attachments/assets/45d77de8-610e-43a1-9285-566183976938" />
 
