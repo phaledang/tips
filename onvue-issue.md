@@ -30,7 +30,7 @@ But I *do* use:
 - WSL  
 - Docker  
 - Visual Studio Code with container extensions  
-- Hyper-V (occasionally)
+- Hyper-V 
 
 And that’s likely where the problem started.
 If virtualization-related services are running in the background, it can fail the pre-check.
@@ -95,10 +95,7 @@ I **did restart after disabling the Windows features**, but I honestly don’t r
 
 Another strange behavior:
 
-OnVUE sometimes said:
-
-> “Please close Microsoft Edge.”
-
+OnVUE sometimes told us to close Microsoft Edge. 
 But Edge was already closed.
 
 Solution:
