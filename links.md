@@ -14,3 +14,5 @@ For more details on available functionality, see:
 
 Conceptual documentation
 API documentation.
+## Architecture
+https://architecture.md/
