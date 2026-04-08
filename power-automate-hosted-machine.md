@@ -1,6 +1,6 @@
 # Power Automate Hosted Machine Setup Guideline
 
-## Problem
+## Introduction
 
 Setting up Power Automate Desktop to run **unattended flows on a hosted machine** involves many moving parts across multiple Microsoft admin portals (Intune, Entra ID, Power Platform). Misconfiguration at any step — missing licenses, wrong permissions, missing Entra app registrations, or forgetting to log off — can cause the hosted machine provisioning or unattended flow execution to fail.
 
