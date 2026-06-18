@@ -22,3 +22,6 @@ GitHub Copilot CLI—the terminal-native coding agent that brings the power of G
  
 ## Architecture
 https://architecture.md/
+
+# skill and agent
+https://github.com/google/adk-python/blob/main/AGENTS.md 
