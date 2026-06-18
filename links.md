@@ -25,3 +25,15 @@ https://architecture.md/
 
 # skill and agent
 https://github.com/google/adk-python/blob/main/AGENTS.md 
+
+https://events.goldcast.io/e/0cc0d88d-52ea-4837-9fce-1da721aea31b/stage/
+
+https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode
+
+https://github.com/microsoft/aspire/blob/main/AGENTS.md
+
+# Claude
+https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start
+
+# Insight
+https://x.com/davidfowl/status/2054084334848790652
